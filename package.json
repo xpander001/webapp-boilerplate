@@ -7,11 +7,22 @@
   "license": "GNU GPLv3",
   "private": true,
   "scripts": {
-    "dev": "next"
+    "dev": "node server/app.js",
+    "build": "next build",
+    "lint": "eslint .",
+    "start": "NODE_ENV=production node server/app.js"
   },
   "dependencies": {
+    "express": "^4.16.3",
     "next": "^6.1.1",
     "react": "^16.4.2",
     "react-dom": "^16.4.2"
+  },
+  "devDependencies": {
+    "eslint": "^5.4.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.1"
   }
 }
