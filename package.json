@@ -8,8 +8,10 @@
   "private": true,
   "scripts": {
     "dev": "node server/app.js",
-    "build": "next build",
     "lint": "eslint .",
+    "precommit": "yarn lint",
+    "prepush": "yarn lint",
+    "build": "next build",
     "start": "NODE_ENV=production node server/app.js"
   },
   "dependencies": {
@@ -23,6 +25,7 @@
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.1",
-    "eslint-plugin-react": "^7.11.1"
+    "eslint-plugin-react": "^7.11.1",
+    "husky": "^0.14.3"
   }
 }
