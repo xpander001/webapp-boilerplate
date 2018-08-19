@@ -1,0 +1,17 @@
+{
+  "name": "webapp-boilerplate",
+  "version": "0.0.1",
+  "description": "A web boilerplate with Next.js, Express & Auth",
+  "repository": "https://github.com/xpander001/webapp-boilerplate",
+  "author": "Ander Suarez <me@andersuarez.com>",
+  "license": "GNU GPLv3",
+  "private": true,
+  "scripts": {
+    "dev": "next"
+  },
+  "dependencies": {
+    "next": "^6.1.1",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
+  }
+}
