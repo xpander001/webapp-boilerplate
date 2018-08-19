@@ -12,7 +12,8 @@
     "precommit": "lint-staged",
     "prepush": "lint-staged",
     "build": "next build",
-    "start": "NODE_ENV=production node server/app.js"
+    "start": "NODE_ENV=production node server/app.js",
+    "heroku-postbuild": "yarn build"
   },
   "lint-staged": {
     "*.js": ["eslint --fix", "git add"]
