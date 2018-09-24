@@ -38,13 +38,9 @@ module.exports = {
 
     // https://cloud.google.com/console/project
     google: {
-      id:
-        process.env.GOOGLE_CLIENT_ID
-        || '739023691386-uv712u0r3c63ep54d098d4obilin0402.apps.googleusercontent.com',
-      secret: process.env.GOOGLE_CLIENT_SECRET || 'EqClfyd5XR_B1B0qTUubabpu',
-      returnUrl:
-        process.env.GOOGLE_CLIENT_URL
-        || 'http://localhost:3000/login/google/return',
+      id: process.env.GOOGLE_CLIENT_ID,
+      secret: process.env.GOOGLE_CLIENT_SECRET,
+      returnUrl: process.env.GOOGLE_CLIENT_URL,
     },
   },
 };

@@ -6,10 +6,12 @@ const Container = styled.div`
   color: gray;
 `;
 
-const Index = () => (
+const Login = () => (
   <div>
-    <Container>Hello world</Container>
+    <Container>
+      <a href="/login/google">LOGIN</a>
+    </Container>
   </div>
 );
 
-export default Index;
+export default Login;
